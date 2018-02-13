@@ -1,0 +1,23 @@
+.jumbotron {
+background: linear-gradient(to right, #ACB6E5, #74ebd5);
+color: white;
+text-align: center;
+
+}
+
+.form-group {
+  width:50%;
+  text-align:center;
+  display:block;
+  margin: 0 auto;
+}
+
+.btn {
+  background-color: #74ebd5;
+  border:#74ebd5;
+  color: black;
+}
+
+#output {
+  text-align: center;
+}

@@ -1,0 +1,27 @@
+<div class="jumbotron">
+  <h1>JK Postal Service</h1>
+</div>
+
+<form action="/output" method="post">
+  <div class="form-group">
+    <!-- height -->
+    <h2>Please fill out our form to get a quote!</h2>
+    <input name="height" class="form-control" type="text" placeholder= "Height"><br>
+    <!-- width -->
+    <input name="width" class="form-control" type="text" placeholder= "Width"><br>
+    <!-- length -->
+    <input name="length" class="form-control" type="text" placeholder= "Length"><br>
+    <!-- distance -->
+    <!-- <input name="distance" class="form-control" type="text" placeholder= "Distance"><br> -->
+
+    <label for="distance">How far away are you from our facilities?</label>
+    <select name="distance" class="form-control" type="text">
+      <option selected="true" disabled="disabled">Please select your distance!</option>
+      <option value="0-5">0-5 Miles</option>
+      <option value="5-20">5-20 Miles</option>
+      <option value="20+">20+ Miles</option>
+    </select><br>
+
+    <button type="submit" name="Go!" class="btn">Get My Quote!</button>
+  </div>
+</form>
