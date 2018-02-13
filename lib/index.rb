@@ -1,34 +1,33 @@
 require('rspec')
 require('pry')
 
-class Parcel
-  def initialize(h, w, l, d)
-    @height = h
-    @width = w
-    @length = l
-    @distance = d
+class Riddle
+  def initialize(question_one, question_two, question_three, question_four, question_five)
+    @question_one = question_one
+    @question_two = question_two
+    @question_three = question_three
+    @question_four = question_four
+    @question_five = question_five
   end
 
-  def distance (baseprice)
-    if @distance == "0-5"
-      baseprice + 10
-    elsif @distance == "5-20"
-      baseprice + 15
-    elsif @distance == "20+"
-      baseprice + 20
+  def result
+    one_result, two_result, three_result, four_result, five_result = false, false, false, false, false
+    if @question_one == "mountain"
+      one_result = true
     end
-  end
-
-  def cost
-    volume = @height * @width * @length
-    baseprice = 50
-    new_price = distance(baseprice)
-
-    if volume <= 50
-      new_price + 20
-    else
-      new_price + 50
+    if @question_two == "wind"
+      two_result = true
     end
+    if @question_three == "dark"
+      three_result = true
+    end
+    if @question_four == "fish"
+      four_result = true
+    end
+    if @question_five == "time"
+      five_result = true
+    end
+    "#{one_result} #{two_result} #{three_result} #{four_result} #{five_result}"
+  end #result
 
-  end # cost
-end # parcel
+end # Riddle
